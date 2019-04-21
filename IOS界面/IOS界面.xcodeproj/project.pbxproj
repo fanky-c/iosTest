@@ -13,6 +13,7 @@
 		A002E73E2268A26E00029FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A002E73D2268A26E00029FA4 /* Assets.xcassets */; };
 		A002E7412268A26E00029FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A002E73F2268A26E00029FA4 /* LaunchScreen.storyboard */; };
 		A002E7442268A26E00029FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A002E7432268A26E00029FA4 /* main.m */; };
+		A023BEB4226B34A700DD92A9 /* UiView.m in Sources */ = {isa = PBXBuildFile; fileRef = A023BEB3226B34A700DD92A9 /* UiView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A002E7402268A26E00029FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A002E7422268A26E00029FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A002E7432268A26E00029FA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A023BEB2226B34A700DD92A9 /* UiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiView.h; sourceTree = "<group>"; };
+		A023BEB3226B34A700DD92A9 /* UiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				A002E73F2268A26E00029FA4 /* LaunchScreen.storyboard */,
 				A002E7422268A26E00029FA4 /* Info.plist */,
 				A002E7432268A26E00029FA4 /* main.m */,
+				A023BEB2226B34A700DD92A9 /* UiView.h */,
+				A023BEB3226B34A700DD92A9 /* UiView.m */,
 			);
 			path = "IOS界面";
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A023BEB4226B34A700DD92A9 /* UiView.m in Sources */,
 				A002E7392268A26A00029FA4 /* ViewController.m in Sources */,
 				A002E7442268A26E00029FA4 /* main.m in Sources */,
 				A002E7362268A26A00029FA4 /* AppDelegate.m in Sources */,

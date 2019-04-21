@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UiView.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    NSArray* array = [[NSArray alloc] initWithObjects:@"uiview",@"uilabel",@"uiimageview", nil];
     
-    
-    self.view.backgroundColor = [UIColor redColor];
+    for(int i=0; i<array.count; i++){
+        UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        btn.frame = CGRectMake(100, 100+80*i, 100, 40);
+        [btn setTitle:[array objectAtIndex:i] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(pressBtn:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn];
+        btn.tag = 100 + i;
+    }
     
 }
+
+-(void)pressBtn:(UIButton*)btn{
+    NSInteger tag = btn.tag;
+    if(tag == 100){
+        UiView* uiview = [[UiView alloc] init];
+        [self presentViewController:uiview animated:YES completion:nil];
+    }
+}
+
 
 
 @end
