@@ -130,7 +130,7 @@
     
     
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(100, 500, 100, 20);
+    btn.frame = CGRectMake(150, 500, 100, 20);
     btn.backgroundColor = [UIColor redColor];
     [btn setTitle:@"点击我" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];

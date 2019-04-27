@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UiView.h"
+#import "UILabelViewController.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    NSArray* array = [[NSArray alloc] initWithObjects:@"uiview",@"uilabel",@"uiimageview", nil];
+    NSArray* array = [[NSArray alloc] initWithObjects:@"UIView",@"UILabel",@"UIImageView", nil];
     
     for(int i=0; i<array.count; i++){
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -37,6 +38,10 @@
     if(tag == 100){
         UiView* uiview = [[UiView alloc] init];
         [self presentViewController:uiview animated:YES completion:nil];
+    }
+    else if(tag == 101){
+        UILabelViewController* label = [[UILabelViewController alloc] init];
+        [self presentViewController:label animated:YES completion:nil];
     }
 }
 
