@@ -15,6 +15,11 @@
 		A002E7442268A26E00029FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A002E7432268A26E00029FA4 /* main.m */; };
 		A01C77C92274410B00EB019C /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C77C82274410B00EB019C /* UILabelViewController.m */; };
 		A01C77CC22747BD500EB019C /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C77CB22747BD500EB019C /* UIImageViewController.m */; };
+		A01C77CE2275994B00EB019C /* obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01C77CD2275994A00EB019C /* obama.jpg */; };
+		A01C77D42275A2FB00EB019C /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01C77D02275A2FB00EB019C /* 4.jpg */; };
+		A01C77D52275A2FB00EB019C /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01C77D12275A2FB00EB019C /* 2.jpg */; };
+		A01C77D62275A2FB00EB019C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01C77D22275A2FB00EB019C /* 1.jpg */; };
+		A01C77D72275A2FB00EB019C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01C77D32275A2FB00EB019C /* 3.jpg */; };
 		A023BEB4226B34A700DD92A9 /* UiView.m in Sources */ = {isa = PBXBuildFile; fileRef = A023BEB3226B34A700DD92A9 /* UiView.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		A01C77C82274410B00EB019C /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
 		A01C77CA22747BD500EB019C /* UIImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewController.h; sourceTree = "<group>"; };
 		A01C77CB22747BD500EB019C /* UIImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewController.m; sourceTree = "<group>"; };
+		A01C77CD2275994A00EB019C /* obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obama.jpg; sourceTree = "<group>"; };
+		A01C77D02275A2FB00EB019C /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		A01C77D12275A2FB00EB019C /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		A01C77D22275A2FB00EB019C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		A01C77D32275A2FB00EB019C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		A023BEB2226B34A700DD92A9 /* UiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiView.h; sourceTree = "<group>"; };
 		A023BEB3226B34A700DD92A9 /* UiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,8 +77,10 @@
 		A002E7332268A26A00029FA4 /* IOS界面 */ = {
 			isa = PBXGroup;
 			children = (
+				A01C77CF2275A2ED00EB019C /* image */,
 				A002E7342268A26A00029FA4 /* AppDelegate.h */,
 				A002E7352268A26A00029FA4 /* AppDelegate.m */,
+				A01C77CD2275994A00EB019C /* obama.jpg */,
 				A002E7372268A26A00029FA4 /* ViewController.h */,
 				A002E7382268A26A00029FA4 /* ViewController.m */,
 				A002E73A2268A26A00029FA4 /* Main.storyboard */,
@@ -84,6 +96,17 @@
 				A01C77CB22747BD500EB019C /* UIImageViewController.m */,
 			);
 			path = "IOS界面";
+			sourceTree = "<group>";
+		};
+		A01C77CF2275A2ED00EB019C /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A01C77D22275A2FB00EB019C /* 1.jpg */,
+				A01C77D12275A2FB00EB019C /* 2.jpg */,
+				A01C77D32275A2FB00EB019C /* 3.jpg */,
+				A01C77D02275A2FB00EB019C /* 4.jpg */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +166,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01C77D52275A2FB00EB019C /* 2.jpg in Resources */,
+				A01C77CE2275994B00EB019C /* obama.jpg in Resources */,
 				A002E7412268A26E00029FA4 /* LaunchScreen.storyboard in Resources */,
 				A002E73E2268A26E00029FA4 /* Assets.xcassets in Resources */,
+				A01C77D42275A2FB00EB019C /* 4.jpg in Resources */,
 				A002E73C2268A26A00029FA4 /* Main.storyboard in Resources */,
+				A01C77D62275A2FB00EB019C /* 1.jpg in Resources */,
+				A01C77D72275A2FB00EB019C /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
