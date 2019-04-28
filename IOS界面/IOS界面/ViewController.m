@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UiView.h"
 #import "UILabelViewController.h"
+#import "UIImageViewController.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,9 @@
     else if(tag == 101){
         UILabelViewController* label = [[UILabelViewController alloc] init];
         [self presentViewController:label animated:YES completion:nil];
+    }else if (tag == 102){
+        UIViewController* imageView = [[UIImageViewController alloc] init];
+        [self presentViewController:imageView animated:YES completion:nil];
     }
 }
 
