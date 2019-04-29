@@ -10,6 +10,7 @@
 #import "UiView.h"
 #import "UILabelViewController.h"
 #import "UIImageViewController.h"
+#import "UIImageViewController2.h"
 
 @interface ViewController ()
 
@@ -21,11 +22,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    NSArray* array = [[NSArray alloc] initWithObjects:@"UIView",@"UILabel",@"UIImageView", nil];
+    NSArray* array = [[NSArray alloc] initWithObjects:@"UIView",@"UILabel",@"UIImageView上", @"UIImageView中", nil];
     
     for(int i=0; i<array.count; i++){
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        btn.frame = CGRectMake(100, 100+80*i, 100, 40);
+        btn.frame = CGRectMake(100, 100+80*i, 140, 40);
         [btn setTitle:[array objectAtIndex:i] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(pressBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
@@ -45,6 +46,9 @@
         [self presentViewController:label animated:YES completion:nil];
     }else if (tag == 102){
         UIViewController* imageView = [[UIImageViewController alloc] init];
+        [self presentViewController:imageView animated:YES completion:nil];
+    }else if(tag == 103){
+        UIImageViewController2* imageView = [[UIImageViewController2 alloc] init];
         [self presentViewController:imageView animated:YES completion:nil];
     }
 }
