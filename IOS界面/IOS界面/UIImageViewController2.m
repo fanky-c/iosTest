@@ -85,7 +85,7 @@
         NSData* data = UIImagePNGRepresentation(image);
         NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString* gifPath = [path firstObject];
-        NSString* gifPathNum = [gifPath stringByAppendingString:[NSString stringWithFormat:@"%d", i]];
+        NSString* gifPathNum = [gifPath stringByAppendingString:[NSString stringWithFormat:@"%d.png", i]];
         i++;
         [data writeToFile: gifPathNum atomically:NO];
     }

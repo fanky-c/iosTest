@@ -50,23 +50,23 @@
     
     //播放序列图（就是多张图片有序播放）
     NSMutableArray* imageArray = [[NSMutableArray alloc] init];
-    for (int i=1; i<=4; i++) {
-        UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i]];
-        NSLog(@"%@", [NSString stringWithFormat:@"%d.jpg", i+0]);
+    for (int i=1; i<=5; i++) {
+        UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"Documents%d.png", i]];
+        NSLog(@"%@", [NSString stringWithFormat:@"Documents%d.png", i]);
         [imageArray addObject:image];
     }
     
-    UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 300, 600)];
+    UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 270, 270)];
     imageView.layer.borderWidth = 2;
     imageView.layer.borderColor = [UIColor redColor].CGColor;
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    //imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:imageView];
     
     //动画数组
     imageView.animationImages = imageArray;
     
     //动画时间
-    imageView.animationDuration = 0.2;
+    imageView.animationDuration = 2.0f;
     
     //动画重复次数
     imageView.animationRepeatCount = 2;
